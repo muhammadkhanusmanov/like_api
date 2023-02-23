@@ -5,7 +5,7 @@ from like_db import LikeDB
 # Create an instance of Flask
 app = Flask(__name__)
 
-db = LikeDB('db.json')
+db = LikeDB('like_api/db.json')
 
 @app.route('/api/add-like/', methods=['POST'])
 def add_like():
